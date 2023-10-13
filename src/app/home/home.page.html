@@ -1,0 +1,161 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Anime LIVE
+    </ion-title>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="ion-padding">
+<div class="content-container">
+  <h1>ANIME</h1>
+  <a (click)="irLogin()">
+    <img alt="inicio" src="assets/images/inicio.png" class="small-logo" />
+  </a>
+</div>
+<ion-list>
+  <ion-item>
+    <ion-select label="Anime favorito" placeholder="anime">
+    <ion-select-option value="JJK">Jujursu Kaisen</ion-select-option>
+    <ion-select-option value="DS">Demon Slayes</ion-select-option>
+    <ion-select-option value="MT">Mushoku Tensei</ion-select-option>
+    <ion-select-option value="VS">Villand Saga</ion-select-option>
+    <ion-select-option value="MAM">Mashle</ion-select-option>
+    <ion-select-option value="z100">zoom 100</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-button expand="block" (click)="enviarDatos()">
+  <ion-icon name="send-outline"></ion-icon>enviar dato
+</ion-button>
+
+<ion-button expand="block" (click)="eliminarDatos()">
+  <ion-icon name="send-outline"></ion-icon> eliminar Datos
+</ion-button>
+
+<ion-button expand="block" (click)="limpiarDatos()">
+  <ion-icon name="send-outline"></ion-icon> limpiar datos
+</ion-button>
+
+<ion-card>
+  <img alt="Castillo" src="assets/images/jjk.jpg"/>
+  <ion-card-header>
+  <ion-card-title>Jujutsu Kaisen</ion-card-title>
+  <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de los humanos se convierten en Maldiciones que nos acechan en nuestra vida diaria. Las Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a las personas a sufrir terribles desgracias e incluso dirigirlas a su muerte. Y lo que es peor: solo una Maldición puede exorcizar otra Maldición.
+    <br>
+    <ion-button expand="block" (click)="irAnime1()">
+      Ir a Anime1Page
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <img alt="Castillo" src="assets/images/ds.jpg"/>
+  <ion-card-header>
+  <ion-card-title>Demon Slayer</ion-card-title>
+  <ion-card-subtitle>
+    Kimetsu no Yaiba
+  </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana la vida vendiendo carbón, descubre un día que su familia ha sido asesinada por un demonio. Para empeorar las cosas, su hermana menor Nezuko, la única superviviente de la masacre, ha sufrido una transformación en demonio.
+    Destrozado por los acontecimientos Tanjiro decide convertirse en un cazador de demonios para poder devolver a su hermana a la normalidad y matar al demonio que masacró a su familia.
+    <br><ion-button>
+      VER MAS
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <img alt="Castillo" src="assets/images/mt2.jpg"/>
+  <ion-card-header>
+  <ion-card-title>
+    Mushoku Tensei
+  </ion-card-title>
+  <ion-card-subtitle>
+    Jobless Reincarnation
+  </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Cuando un autobús atropella a un joven de 34 años que no ha logrado mucho en su vida, su historia no termina ahí. Habiendo reencarnado en un niño, Rudy aprovechará cada oportunidad para vivir la vida que siempre quiso. ¡Con la ayuda de sus amigos, unas habilidades mágicas recién adquiridas, y el coraje para hacer las cosas que siempre ha soñado, se embarca en una aventura épica, con su experiencia pasada intacta!
+    <br><ion-button>
+      VER MAS
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <img alt="Castillo" src="assets/images/vs2.jpg"/>
+  <ion-card-header>
+  <ion-card-title>Vinland Saga</ion-card-title>
+  <ion-card-subtitle></ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Cuando Thors, un gran guerrero viking muere asesinado en batalla a manos de Askeladd, un mercenario, su hijo, Thorfinn, jura vengarse. Para ello tendrá que demostrar su valía antes de ganarse el derecho a retar a un duelo al asesino de su padre.
+    <br><ion-button>
+      VER MAS
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img alt="Castillo" src="assets/images/m.jpg"/>
+  <ion-card-header>
+  <ion-card-title>MASHLE</ion-card-title>
+  <ion-card-subtitle>MAGIC AND MUSCLES</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    En un mundo donde la magia es una parte común de la vida, un joven llamado Mash Burnedead vive en un bosque profundo y oscuro. A pesar de que todos en este mundo son capaces de usar magia, Mash es una excepción y no posee esa habilidad. A pesar de su falta de poder mágico, Mash se esfuerza en su entrenamiento diario.
+    <br><ion-button>
+      VER MAS
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <img alt="Castillo" src="assets/images/z100.jpg"/>
+  <ion-card-header>
+  <ion-card-title>Zom 100</ion-card-title>
+  <ion-card-subtitle>The Bucket List of the Dead</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Akira ve cómo una empresa explotadora le absorbe por completo la vida. Mientras tanto, cuando su ciudad es azotada repentinamente por un apocalipsis zombi, encuentra un nuevo sentido a la vida.
+    <br><ion-button>
+      VER MAS
+    </ion-button>
+  </ion-card-content>
+</ion-card>
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>© Anime Live</ion-title>
+    <ion-buttons slot="end">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
