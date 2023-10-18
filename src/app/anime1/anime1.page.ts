@@ -13,12 +13,10 @@ export class Anime1Page implements OnInit {
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
-    // Llama a una función en tu servicio para obtener detalles del anime
     this.apiService.getAnimeDetails(1).subscribe((data) => {
       this.anime = data;
     });
 
-    // Llama a una función en tu servicio para obtener los comentarios del anime
     this.apiService.getComments(1).subscribe((data: any[]) => {
       this.comentarios = data;
     });

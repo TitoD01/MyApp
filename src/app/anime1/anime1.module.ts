@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'; // Asegúrate de importar HttpClientModule
+import { HttpClientModule } from '@angular/common/http'; 
 
 import { Anime1Page } from './anime1.page';
 
@@ -12,7 +12,7 @@ import { Anime1Page } from './anime1.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    HttpClientModule, // Añade HttpClientModule aquí
+    HttpClientModule, 
     RouterModule.forChild([
       {
         path: '',

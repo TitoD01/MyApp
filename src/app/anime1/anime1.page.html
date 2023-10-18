@@ -1,12 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Detalles del Anime</ion-title>
+    <ion-title>Jujutsu Kaisen</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <img alt="Castillo" src="assets/images/jk.jpg"/>
+  <img alt="Castillo" src="assets/images/jk.png"/>
   <ion-card>
+
     <ion-card-header>
       <ion-card-title>{{ anime?.title }}</ion-card-title>
     </ion-card-header>
@@ -15,7 +16,7 @@
     </ion-card-content>
   </ion-card>
 
-  <h2>Comentarios</h2>
+  <h2 >Comentarios</h2>
   <ion-list>
     <ion-item *ngFor="let comentario of comentarios">
       {{ comentario.name }}: {{ comentario.body }}
